@@ -12,12 +12,12 @@ function AddUser(){
         var user = {
             name: name,
             email: email,
-            phone, phone,
+            phone: phone,
             userId: uniquid()
         }
         console.log(user)
 
-        axios.post('api/user/adduser', user)
+        axios.post('/api/user/adduser', user)
         .then(
             res => {
                 alert(res.data)
