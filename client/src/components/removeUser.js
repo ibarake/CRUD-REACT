@@ -1,11 +1,11 @@
 import React from 'react'
 
-function removeUser(){
+function RemoveUser(){
     return(
         <div>
-            <h2>Crear List</h2>
+            <h2>remove user</h2>
         </div>
     );
 }
 
-export default removeUser
+export default RemoveUser

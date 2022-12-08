@@ -1,13 +1,13 @@
 import React from 'react'
-import user from './user.js'
+import User from './User.js'
 
-function userList(){
+function UserList(){
     return(
         <div>
             <h2>User List</h2>
-            <user/>
+            <User/>
         </div>
     );
 }
 
-export default userList
+export default UserList

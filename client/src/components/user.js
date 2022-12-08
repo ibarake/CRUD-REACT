@@ -1,6 +1,6 @@
 import React from 'react'
 
-function user(){
+function User(){
     return(
         <div>
             <h2>Crear List</h2>
@@ -8,4 +8,4 @@ function user(){
     );
 }
 
-export default user
+export default User
