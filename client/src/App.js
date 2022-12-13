@@ -37,11 +37,6 @@ function App() {
                   Add
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="edituser">
-                  Edit
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -50,7 +45,7 @@ function App() {
         <Routes>
           <Route path="/" element={<UserList />} exact></Route>
           <Route path="/adduser" element={<AddUser />} exact></Route>
-          <Route path="/edituser" element={<EditUser />} exact></Route>
+          <Route path="/edituser/:userId" element={<EditUser />} exact></Route>
         </Routes>
       </BrowserRouter>
     </div>

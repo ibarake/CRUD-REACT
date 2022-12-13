@@ -1,29 +1,29 @@
 import React, { useState } from 'react'
 import uniquid from 'uniqid'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
 
 function AddUser(){
-
+    const nv = useNavigate()
     const [name, setname] = useState('');
     const [email, setemail] = useState('');
     const [phone, setphone] = useState('');
 
     function addUser(){
         var user = {
-            name: name,
             email: email,
+            name: name,
             phone: phone,
             userId: uniquid()
         }
         console.log(user)
 
-        axios.post('/api/user/adduser', user)
-        .then(
+        axios.post('/api/user/adduser', user).then(
             res => {
                 alert(res.data)
+                nv("/")
             }
-        )
-        .then(
+        ).then(
             err => {
                 console.log(err)
             }
